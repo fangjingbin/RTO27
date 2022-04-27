@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ceshi.css">
+    <link rel="stylesheet" href="mycss.css">
+</head>
+<body>
+    <h1 style="color: blue;" >XS Educatuib</h1>
+    <img src="xiaohui.jpg">
+    <div >
+      <ul class=daohang>
+        <li><a href="index.html" >Home page</a></li>
+        <li><a href="course.html">course</a></li>
+        <li><a href="Map.html" id="myst2">Map</a></li>
+      </ul>
+
+      <div class="showTime"></div>
+      <script src="myjs.js"></script>
+
+      <table>
+          <td>Address</td>
+      <td><img src="Map.png" width=1000 height="500"></td>
+    </table>
+    <img src="school1.jpg">
+  <img src="school2.jpg">
+
+
+  <P>&nbsp;</P>
+  <P>&nbsp;</P>
+  <P>&nbsp;</P>
+  <P>&nbsp;</P>
+
+
+
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="xh4.png" style="width:100%">
+    <img class="mySlides" src="xh6.png" style="width:100%">
+
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+</body>
+</html>
